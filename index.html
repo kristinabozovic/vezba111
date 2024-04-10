@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div id="cela-forma">
+
+        <form action="" id="forma">
+
+            <div id="kolona-levo">
+                <div id="stavka">
+                    <label for="ocena">Ocena:</label>
+                    <input type="number" id="ocena" min="5" max="10">
+                    <p id="razlogGreskeOcena"></p>
+                </div>
+                <br>
+                <div id="stavka">
+                    <label for="brojIndeksa">Broj indeksa:</label>
+                    <input type="text" id="brojIndeksa" placeholder="2022/0405">
+                    <p id="razlogGreskeBrojIndeksa"></p>
+                    <p id="razlogGreskeBrojIndeksa1"></p>
+                </div>
+                <br>
+                <div id="stavka">
+                    <label for="redniBrojIzlaska">Redni broj izlaska na ispit:</label>
+                    <select name="izlazak" id="izlazak">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+            <div id="kolona-desno">
+                <div id="stavka">
+                    <label for="datumizlaska">Datum izlaska na ispit:</label>
+                    <input type="date" id="datumizlaska">
+                </div>
+                <br>
+                <div id="stavka">
+                    <label for="rok">Rok:</label>
+                    <input type="radio" name="rok" id="januar" value="januar">
+                    <label for="januar">Januar</label>
+                    <input type="radio" name="rok" id="april" value="april">
+                    <label for="april">April</label>
+                    <input type="radio" name="rok" id="jun" value="jun">
+                    <label for="jun">Jun</label>
+                    <input type="radio" name="rok" id="septembar" value="septembar">
+                    <label for="septembar">Septembar</label>
+                </div>
+                <br>
+                <div id="stavka">
+                    <input type="checkbox" id="polozen">
+                    <label for="polozen">Polozio/la</label>
+                    <p id="razlogGreske"></p>
+                </div>
+                <br>
+                <div id="stavka">
+                    <button id="posalji">Posalji</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+<form action="">
+    <label for="podaciForme">Podaci forme:</label>
+    <textarea name="podaci" id="podaci" cols="50" rows="10"></textarea>
+    <p id="razlogGreskeTextArea"></p>
+    <br>
+</form>
+    <button id="ucitaj">Ucitaj</button>
+
+
+    <script src="index.js"></script>
+    <script src="deserialize.js"></script>
+</body>
+
+</html>
